@@ -3,8 +3,8 @@
 Sibling project to
 [svelte-tufte-css-blog-template](https://github.com/sjcobb2022/svelte-tufte-css-blog-template).
 It was made out of a desire to use more updated packages, as svelte (or at least
-mdsvex) relies on an outdated version of katex to work properly. Also partially
-motivated by the astro v7 release.
+mdsvex) relies on an outdated version of katex to render maths nicely. Also
+partially motivated by the astro v7 release.
 
 A minimal blog template built on the wonderful
 [tufte-css](https://github.com/edwardtufte/tufte-css).
