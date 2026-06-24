@@ -1,0 +1,37 @@
+---
+import "katex/dist/katex.min.css";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <article>
+    <slot />
+  </article>
+</BaseLayout>
+
+<style is:global>
+  /* reset counter for sidenotes */
+  article {
+    counter-reset: sidenote-counter;
+  }
+
+  /* remove background */
+  .astro-code,
+  .astro-code span {
+    background: none !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .astro-code,
+    .astro-code span {
+      background: none !important;
+      color: var(--shiki-dark) !important;
+    }
+  }
+</style>
