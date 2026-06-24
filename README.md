@@ -16,6 +16,9 @@ We use [Astro](https://astro.build) with
 parsing markdown, and [KaTeX](https://katex.org) for LaTeX support. See
 `./src/plugins` for the katex plugin.
 
+We also use [shiki](https://shiki.style/) for highlighting, with one-dark themes
+because I think they fit nicely with the tuftian palette.
+
 All assets live in `./public`, including `tufte.css` for styling and the
 `et-book` font files. Assets are made to be relatively static to allow for
 happier hacking.
